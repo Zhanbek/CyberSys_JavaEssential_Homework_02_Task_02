@@ -1,0 +1,50 @@
+package model;
+
+public class Car {
+    private int year;
+    private String color;
+
+    public Car() {
+        this(2002, "gray");
+    }
+
+    public Car(int year) {
+        this(year, "gray");
+
+    }
+
+    public Car(String color) {
+        this.year = 2002;
+        this.color = color;
+    }
+
+
+    public Car(int year, String color) {
+        this.year = year;
+        this.color = color;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "year=" + year +
+                ", color='" + color + '\'' +
+                '}';
+    }
+}
