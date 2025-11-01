@@ -5,12 +5,14 @@ public class Car {
     private String color;
 
     public Car() {
-        this(2002, "gray");
+        this.year = 2002;
+        this.color = "gray";
+
     }
 
     public Car(int year) {
-        this(year, "gray");
-
+        this.year = year;
+        this.color = "gray";
     }
 
     public Car(String color) {
